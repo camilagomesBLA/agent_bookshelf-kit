@@ -8,6 +8,7 @@ After each run, the product owner logs decisions and anything Claude got wrong.
 - Do not split a spec into phases unless the issue or the product owner asks for it. The baseline spec uses phases only because that feature needed them.
 - Never inherit scope decisions (for example "no login") from other specs. Scope decisions are asked and confirmed before writing.
 - Keep specs short: 3–5 stories, up to 6 edge cases, and only questions that block development.
+- If the product owner answers only some scope questions, ask for the rest before writing.
 
 ## Run log
 
@@ -33,6 +34,23 @@ After each run, the product owner logs decisions and anything Claude got wrong.
   2. It decided on its own that there is no login in this phase, inherited from the other spec, instead of asking the product owner first.
   3. The spec was too long, which made the review slow.
 - **Fix applied:** see Rules learned and the changes to the brief, skill and template.
+
+### Run 2 — Issue #2 Search is hard to use when the shelf is big — Oct 21, 2026
+- **Time with kit:** 10 min (manual baseline: 26 min)
+- **Business-lens verdict:** Build later
+- **Hook:** accepted first time
+- **Critic verdict:** Ready after answers
+- **Scope check answers:**
+  - Q1: Which list is the problem? → A: Books on one shelf only.
+  - Q2: What should search match? → A: Title and author, partial match, ignoring case and accents, no typo tolerance.
+  - Q3: Browser or server? → A: In the browser. `/books/search` homework left as is.
+  - Q4: Search, or also sort and filter? → A: Search only. Sort and filter parked.
+  - Q5: Web pages or JSON API? → A: Web pages only. API can wait.
+- **Decisions (answers to critic questions):**
+  - Parked: all critic questions, to discuss with the dev team
+- **What Claude got wrong:** after the product owner answered only question 1 of the scope check, it moved on and turned questions 2–5 into open questions instead of asking for the rest.
+- **What improved since run 1:** no phases, shorter spec, and it asked about the API again instead of inheriting the answer from run 1.
+- **Fix applied:** added to Rules learned: "If the product owner answers only some scope questions, ask for the rest before writing."
 
 
 <!-- Copy this block for each run -->

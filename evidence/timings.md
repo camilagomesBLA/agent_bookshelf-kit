@@ -4,8 +4,8 @@
 | Run | Issue | Method | Minutes | Notes |
 |---|---|---|---|---|
 | Baseline | #4 Reading goal for the year | By hand | 26 | `specs/manual-baseline.md` |
-| 1 | #1 | Kit | | |
-| 2 | #2 | Kit | | |
+| 1 | #1 | Kit | 20min | |
+| 2 | #2 | Kit | 10min | |
 | 3 | #3 | Kit | | |
 
 "Minutes" with the kit = from typing the brief command until the spec is reviewed and decisions are logged (includes my review time).
