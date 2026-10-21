@@ -50,7 +50,7 @@ After each run, the product owner logs decisions and anything Claude got wrong.
   - Parked: all critic questions, to discuss with the dev team
 - **What Claude got wrong:** after the product owner answered only question 1 of the scope check, it moved on and turned questions 2–5 into open questions instead of asking for the rest.
 - **What improved since run 1:** no phases, shorter spec, and it asked about the API again instead of inheriting the answer from run 1.
-- **Fix applied:** added to Rules learned: "If the product owner answers only some scope questions, ask for the rest before writing."
+- **Fix applied:** added to Rules learned: "If the product owner answers only some scope questions, ask for the rest before writing." Also updated step 3 of `prompts/brief.md` to match.
 
 
 <!-- Copy this block for each run -->
