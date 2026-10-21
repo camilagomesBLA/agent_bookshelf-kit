@@ -59,3 +59,16 @@ No lint script. `npm start` is likely broken: `tsc` doesn't copy SQL, views, or 
 - Files match `tests/**/*.test.ts`; Vitest `globals: true`. `tests/setup.ts` is **not** registered in `vitest.config.ts`, so each file does its own setup.
 - `beforeEach`: `initDb('/tmp/<unique-name>.db')` for a fresh seeded DB; `afterEach`: `closeDb()` and delete the file. Use a distinct path per test file.
 - Route tests: `request(app)` (supertest) against the default export of `src/server.ts`.
+
+## Capstone kit: backlog refinement
+
+This repo also contains a Claude Code kit that turns raw GitHub issues (label `raw`) into feature specs.
+
+- Entry point: `prompts/brief.md` — run it with `Run prompts/brief.md for issue #<NUMBER>`
+- Spec format: `specs/TEMPLATE.md` (5 required sections). Quality example: `specs/manual-baseline.md`
+- Skills: `spec-writer` (writes the spec), `business-lens` (build now / later / not at all)
+- Subagent: `spec-critic` (read-only reviewer)
+- Hook: `.claude/hooks/check-spec.js` blocks a spec missing a required section, and blocks access to `.env` and credential files
+- Memory: `decisions.md` — read it before every spec; apply its "Rules learned"
+- GitHub access is READ-ONLY through the `github` MCP server. Never create, edit, comment on or close issues.
+- Specs are drafts. The product owner reviews every spec before it goes anywhere.
