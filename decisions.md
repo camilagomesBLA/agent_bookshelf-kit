@@ -17,8 +17,17 @@ After each run, the product owner logs decisions and anything Claude got wrong.
 - **Hook:** accepted first time
 - **Critic verdict:** Ready after answers
 - **Decisions (answers to critic questions):**
-  - Pending: the product owner has not answered the 11 critic questions yet
-  - Parked: none yet
+  - Q1: Is "finished" the same as being on the `read` shelf? → A: Yes. Finished = being on the Read shelf. The finish date is saved when the book is added to Read.
+  - Q2: How does the book page know who the user is? → A: Use the existing Alice/Bob/Carol user list. No login.
+  - Q3: What do seeded books show as the finish date? → A: "date unknown".
+  - Q4: One click or a form with a date? → A: One click, saves today's date.
+  - Q5: Where does the finished list live? → A: The existing Read shelf page, showing the finish date there.
+  - Q6: Does marking finished remove the book from other shelves? → A: Yes, from "currently reading" and "want to read".
+  - Q7: Which "today" wins near midnight? → A: The browser's local date.
+  - Q9: Does removing a book from Read on the shelf page un-finish it? → A: Yes.
+  - Q10: Sort order of the finished list? → A: Newest first.
+  - Q11: Web pages only, or the JSON API too? → A: Web pages only.
+  - Parked: editing the finish date later (Q4); what un-marking does (Q6); blocking or warning when the `read` shelf is deleted, to discuss with the dev team (Q8); JSON API (Q11)
 - **What Claude got wrong:**
   1. It split the spec into "Phase 1" with no Phase 2, copying the structure of `specs/manual-baseline.md` without a reason.
   2. It decided on its own that there is no login in this phase, inherited from the other spec, instead of asking the product owner first.
