@@ -3,7 +3,7 @@
 Turns a raw, vague GitHub issue into a feature spec a developer can build from, with a built-in critic.
 Capstone project, "Automate Your Week". Task: weekly backlog refinement (PM track).
 
-**Result:** one spec by hand took **26 min**. With the kit: **__ min** on average over 3 issues (see `evidence/timings.md`).
+**Result:** one spec by hand took **26 min**. With the kit: **13 min (20, 10 and 10 min over 3 issues)** on average over 3 issues (see `evidence/timings.md`).
 
 ## What it does
 1. Reads the issue from GitHub through a **read-only** MCP connection

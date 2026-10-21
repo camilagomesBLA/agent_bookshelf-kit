@@ -52,6 +52,23 @@ After each run, the product owner logs decisions and anything Claude got wrong.
 - **What improved since run 1:** no phases, shorter spec, and it asked about the API again instead of inheriting the answer from run 1.
 - **Fix applied:** added to Rules learned: "If the product owner answers only some scope questions, ask for the rest before writing." Also updated step 3 of `prompts/brief.md` to match.
 
+### Run 3 — Issue #3 Can we let people rate books? — Oct 21, 2026
+- **Time with kit:** 10 min (manual baseline: 26 min)
+- **Business-lens verdict:** Build now
+- **Hook:** accepted first time
+- **Critic verdict:** Ready after answers
+- **Scope check answers:**
+  - Q1: What's the actual gap, since rating already exists? → A: Show ratings in more places, so people see that ratings exist. What Sales had in mind exactly: parked, to ask Sales.
+  - Q2: Who is rating? → A: Keep the "Review as: Alice / Bob / Carol" picker. No login.
+  - Q3: Rating without a review? → A: Keep it as it is: rating required, text optional.
+  - Q4: Where should ratings show up? → A: Average rating and number of ratings on the book list and on shelf pages. "My reviews" page parked.
+  - Q5: Web pages or JSON API? → A: Web pages only. JSON API can wait.
+- **Decisions (answers to critic questions):**
+  - Parked: all critic questions, to discuss with the dev team
+- **What Claude got wrong:** nothing found in the product owner's review.
+- **What improved since run 2:** it read the code and found that rating already exists, so the spec focused on the real gap instead of rebuilding the feature. All scope questions answered in one message, no phases, short spec.
+- **Fix applied:** none needed.
+
 
 <!-- Copy this block for each run -->
 ### Run <n> — Issue #<number> <title> — <date>
