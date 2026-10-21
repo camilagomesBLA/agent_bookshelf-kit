@@ -26,8 +26,8 @@ Then <observable result>
 - Dependencies this work needs (for example, a table or page that must exist first)
 
 ## Open Questions
-### This phase
+### Before development
 - Questions the product owner must answer before development starts
 
-### Later phases
+### Can wait
 - Questions that can wait

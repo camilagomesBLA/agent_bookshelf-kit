@@ -13,8 +13,8 @@
 ## /context — before and after the GitHub MCP connection
 | Measurement | Total tokens used | MCP tools line | Screenshot |
 |---|---|---|---|
-| Before MCP (fresh session) | | — | `evidence/context-before.png` |
-| After MCP (fresh session) | | | `evidence/context-after.png` |
+| Before MCP (fresh session) | | 30.5k/1m tokens | `evidence/context-before.png` |
+| After MCP (fresh session) | | 30.9k/1m tokens | `evidence/context-after.png` |
 
 Why `/x/issues/readonly`: the full GitHub MCP server loads many toolsets. Loading only the read-only issues toolset keeps the context small and makes writing to GitHub impossible.
 

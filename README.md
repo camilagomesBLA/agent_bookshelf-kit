@@ -24,7 +24,7 @@ Capstone project, "Automate Your Week". Task: weekly backlog refinement (PM trac
 ## Install (about 10 minutes)
 Requirements: Claude Code, Node.js, a GitHub account.
 
-1. **Get the repo:** `git clone https://github.com/camilagomesBLA/agent-bookshelf-kit.git` then `cd agent-bookshelf-kit`
+1. **Get the repo:** `git clone https://github.com/camilagomesBLA/agent_bookshelf-kit.git` then `cd agent_bookshelf-kit`
 2. **Create a GitHub token (read-only):** github.com → profile photo → Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate new token.
    Repository access: *Only select repositories* → your repo. Permissions → Repository → **Issues: Read-only**. Copy the token.
 3. **Connect the GitHub MCP server** (stored in your user settings, never in the repo):
