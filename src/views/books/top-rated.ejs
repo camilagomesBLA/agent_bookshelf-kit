@@ -1,0 +1,23 @@
+<%- include('../partials/header') %>
+
+<h1>Top Rated</h1>
+<p>The highest-rated books with at least <%= minReviews %> reviews.</p>
+
+<% if (books.length === 0) { %>
+  <p class="no-reviews">No books have <%= minReviews %> or more reviews yet. <a href="/">Browse books</a> and add some!</p>
+<% } else { %>
+  <div class="book-grid">
+    <% books.forEach((book, index) => { %>
+      <div class="book-card">
+        <h2><a href="/books/<%= book.id %>">#<%= index + 1 %> <%= book.title %></a></h2>
+        <p class="author">by <%= book.author %></p>
+        <p class="rating-summary">
+          <span class="stars"><%= '★'.repeat(Math.round(book.avg_rating)) %><%= '☆'.repeat(5 - Math.round(book.avg_rating)) %></span>
+          <%= book.avg_rating.toFixed(1) %> / 5 (<%= book.review_count %> reviews)
+        </p>
+      </div>
+    <% }) %>
+  </div>
+<% } %>
+
+<%- include('../partials/footer') %>

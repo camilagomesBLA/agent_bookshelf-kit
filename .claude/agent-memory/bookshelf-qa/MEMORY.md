@@ -1,0 +1,2 @@
+- [Top Rated QA results](project_top_rated_qa.md) — /top-rated re-tested 2026-10-08; both bugs fixed; open question: 4.95 avg outranks true 5.0
+- [Use throwaway instance](feedback_throwaway_instance.md) — never mutate port 3000; run PORT=3055 server from a /tmp cwd for data tests
